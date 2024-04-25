@@ -1,28 +1,30 @@
-
-import Link from 'next/link'
-import styles from '../../styles/Home.module.css'
+import Link from "next/link";
+import styles from "../../styles/Home.module.css";
 
 export default function CarsList(props) {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Cars list
-        </h1>
+        <h1 className={styles.title}>Cars list</h1>
 
         <ul>
           <li>
-            <Link href="/cars/tesla"><a>Tesla</a></Link>
+            <Link href="/cars/tesla">
+              <a>Tesla</a>
+            </Link>
           </li>
           <li>
-            <Link href="/cars/ford"><a>Ford</a></Link>
+            <Link href="/cars/ford">
+              <a>Ford</a>
+            </Link>
           </li>
           <li>
-            <Link href="/cars/lambo"><a>Lambo</a></Link>
+            <Link href="/cars/lambo">
+              <a>Lambo</a>
+            </Link>
           </li>
         </ul>
-        </main>
+      </main>
     </div>
-  )
-  }
-    
+  );
+}
